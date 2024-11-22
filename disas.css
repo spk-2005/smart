@@ -1,0 +1,150 @@
+
+  
+  /* Main container */
+  #disas-section {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+  }
+  
+  #disas-cont {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styles */
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #444;
+    margin-bottom: 2rem;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  h2:hover {
+    color: #009688;
+  }
+  
+  /* Disaster post container */
+  .disaster-post {
+    background: #fafafa;
+    padding: 20px;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .disaster-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Disaster post content */
+  .disaster-post p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  
+  strong {
+    font-weight: 600;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+    transition: opacity 0.3s ease;
+  }
+  
+  video:hover {
+    opacity: 0.8;
+  }
+  
+  /* Loading and error states */
+  .loading, .error {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .loading {
+    color: #00bcd4;
+  }
+  
+  .error {
+    color: #f44336;
+    font-weight: bold;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .disaster-post {
+      padding: 15px;
+    }
+  
+    .disaster-post h2 {
+      font-size: 1.6rem;
+    }
+  
+    video {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #disas-cont {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    .disaster-post h2 {
+      font-size: 1.4rem;
+    }
+  
+    .disaster-post p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Animation keyframes */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

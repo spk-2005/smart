@@ -1,0 +1,125 @@
+/* General layout */
+#main-cont {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #f4f7fb;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Contest information */
+  #docont h1 {
+    font-size: 2.5rem;
+    color: #2d3e50;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  #docont p {
+    font-size: 1.2rem;
+    color: #34495e;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  #docont h2 {
+    font-size: 1.8rem;
+    color: #2980b9;
+    margin-top: 30px;
+  }
+  
+  #docont ol {
+    margin-left: 20px;
+    font-size: 1.1rem;
+  }
+  
+  #docont li {
+    color: #2c3e50;
+    margin-bottom: 12px;
+  }
+  
+  #docont button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #2980b9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #docont button:hover {
+    background-color: #16a085;
+  }
+  
+  /* Live camera section */
+  #live-camera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: center;
+  }
+  
+  #live-camera video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #2980b9;
+    margin-bottom: 20px;
+  }
+  
+  #record-controls button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #record-controls button:hover {
+    background-color: #c0392b;
+  }
+  @media only screen and (max-width:700px) {
+    #main-cont{
+      display: block;
+    }
+    #docont h1 {
+      font-size: 20px;
+    }
+    #docont h2 {
+      font-size: 20px;
+    }    
+    #docont ol li{
+    font-size:10px;
+    }
+
+    /* Contest information */
+    #docont p {
+      font-size: 10px;
+    }#live-camera{
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #live-camera video{
+      width: 100px !important;
+      height:100px !important;
+    }
+    #record-controls video{
+    }
+  }

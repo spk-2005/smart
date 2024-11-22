@@ -1,0 +1,142 @@
+
+  
+  #adsig {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); /* Softer shadow for a subtle 3D effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%;
+    max-width: 400px; /* Max width for desktop and responsive sizing */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #adsig:hover {
+    transform: scale(1.02); /* Subtle hover effect */
+    box-shadow: 0 12px 45px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+  }
+  
+  #adsig form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  #adsig form input[type="email"],
+  #adsig form input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 50px;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+  }
+  
+  #adsig form input[type="email"]:focus,
+  #adsig form input[type="password"]:focus {
+    border-color: #6c63ff; /* Modern focus color */
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+  }
+  
+  #adsig form button[type="submit"] {
+    background-color: #6c63ff; /* Primary action button */
+    color: #fff;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  #adsig form button[type="submit"]:hover {
+    background-color: #5a54e0; /* Darken button on hover */
+    transform: translateY(-3px); /* Subtle lift on hover */
+  }
+  
+  #adsig p {
+    color: #d9534f; /* Error color */
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-top: 15px;
+  }
+  
+  /* Animation for error message */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  #adsig p {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media screen and (max-width: 1024px) {
+    #adsig {
+      max-width: 600px; /* Adjust width for tablet screens */
+      padding: 40px;
+    }
+  
+    #adsig form input[type="email"],
+    #adsig form input[type="password"] {
+      padding: 14px;
+      font-size: 1.05rem;
+    }
+  
+    #adsig form button[type="submit"] {
+      padding: 14px 30px;
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #adsig {
+      width: 90%; /* Max width for mobile screens */
+      padding: 30px;
+    }
+  
+    #adsig form input[type="email"],
+    #adsig form input[type="password"] {
+      padding: 12px;
+      font-size: 1rem;
+    }
+  
+    #adsig form button[type="submit"] {
+      padding: 12px 25px;
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #adsig {
+      padding: 20px; /* Less padding for smaller mobile screens */
+    }
+  
+    #adsig form input[type="email"],
+    #adsig form input[type="password"] {
+      padding: 10px;
+      font-size: 0.95rem;
+    }
+  
+    #adsig form button[type="submit"] {
+      padding: 10px 20px;
+      font-size: 0.95rem;
+    }
+  }
+  

@@ -1,0 +1,74 @@
+#food1 {
+    background-color: #f0f4f8;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  
+  #food1-cont h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  #sug {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  #sug input, #sug textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  #sug button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #sug button:hover {
+    background-color: #218838;
+  }
+  #sug-al{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  #sug-al h3{
+    text-align: center;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #83a728;
+    margin: 1em;
+  }
+  #sug-al #cname{
+    font-size: 23px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #sug-al #sugee{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: #554e4e;
+
+
+  }
+  #sug-al .suggestion-item{
+    border: 2px solid black;
+  margin: 1em;
+  padding: 1em;
+  }

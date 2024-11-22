@@ -1,0 +1,59 @@
+#heal-tags {
+  padding: 20px;
+  background-color: #f9f9f9;
+  max-width: 800px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+}
+
+#heal-tags h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#heal-tags ol {
+  list-style: none;
+  padding: 0;
+}
+
+#heal-tags li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+#heal-tags img {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.contest-info h2 {
+  margin: 0;
+  color: #34495e;
+}
+
+.contest-info p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}

@@ -1,0 +1,145 @@
+.nutrient-quest-section {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #f0f8ff, #e0ffe5);
+}
+
+.quest-header h2 {
+  color: #5a9;
+  font-size: 2.5rem;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.quest-header p {
+  color: #333;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.level-indicator h3 {
+  font-size: 2rem;
+  color: #ff4500;
+  animation: levelUp 1.5s ease-out;
+}
+
+.seeds-grid {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.seed-card {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.seed-card:hover {
+  transform: scale(1.1);
+}
+
+.seed-card.unlocked {
+  background-color: #5a9;
+  color: white;
+  animation: shine 1.5s ease-in-out infinite;
+}
+
+.unlocked-seed-info {
+  margin-top: 30px;
+  text-align: left;
+  padding: 10px;
+  animation: slideUp 1s ease-out;
+}
+
+.seed-info {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.seed-image {
+  max-width: 150px;
+  margin-bottom: 20px;
+  animation: zoomIn 1.2s ease-out;
+}
+
+.seed-benefits, .seed-funfact, .seed-challenge {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  animation: fadeInText 1.5s ease-out;
+}
+
+.game-status p {
+  font-size: 1.2rem;
+  color: #ff4500;
+}
+
+@keyframes shine {
+  0% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff4500, 0 0 30px #ff4500;
+  }
+  50% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #ff4500, 0 0 30px #ff4500, 0 0 40px #ff4500;
+  }
+  100% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff4500, 0 0 30px #ff4500;
+  }
+}
+
+@keyframes levelUp {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

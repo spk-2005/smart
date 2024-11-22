@@ -1,0 +1,130 @@
+#head {
+    margin: 0 auto;
+    background: linear-gradient(65deg, rgb(182, 236, 167), rgb(169, 236, 169), rgb(161, 223, 171));
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0px 8px 16px grey;
+}
+#logo1{
+    width: 130px;
+    height: 100px;
+}
+#head nav {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5em;
+    transition: transform 0.5s ease-in-out;
+}
+
+.nav-links li {
+    position: relative;
+    font-size: 1.2em;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.nav-links li::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    background-color: black;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+.nav-links li:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.menu-icon.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        overflow-x: hidden;
+        position: absolute;
+        top: 100%;
+        font-size: 5px !important;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(143, 135, 135, 0.9);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+    }
+
+    .nav-links.open {
+        overflow-x: hidden;
+        transform: translateX(0);
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+    #head nav {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        padding: 1em;
+    }
+    #head nav ul{
+        align-content: center;
+        padding-bottom: 10px;
+    }
+
+    .nav-links li {
+        font-size: 5em !important;
+    } 
+    body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
+}
